@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/css/photo_retouching.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="d-flex">
+            <div class="col-lg-3">
+                <div class="card">
+                    <nav class="sidebar close">
+                        <header>
+                            <div class="image-text">
+                                <span class="image">
+                                    <img src="../static/logo.svg" alt="1000px">
+                                </span>
+                            
+                                <div class="text logo-text">
+                                    <span class="name"></span>
+                                    <!-- <span class="profession">Web developer</span> -->
+                                </div>
+                            </div>
+                            <!-- <a href="#" class="navbar-brand" id="sidebar-toggle"><i class="fa fa-bars"></i></a> -->
+                            <i class='bx bx-chevron-right toggle'></i>
+                        </header>
+                    
+                        <div class="menu-bar">
+                            <div class="menu">
+                                <li class="nav-link">
+                                    <div id="content"></div>
+                                    <a href="/" id="btn" >
+                                    
+                                        <i class='bx bx-message-rounded-dots'></i>
+                                        <span class="text nav-text">chats </span>
+                                    </a>
+                                </li>
+                                <!-- <li class="search-box">
+                                    <i class='bx bx-search icon'></i>
+                                    <input type="text" placeholder="Search...">
+                                </li> -->
+                            
+                                <ul class="menu-links">
+                                    <!-- <li class="nav-link">
+                                        <a href="#">
+                                        
+                                            <i class='bx bx-message-rounded-dots'></i>
+                                            <span class="text nav-text">chart</span>
+                                        </a>
+                                    </li> -->
+                                    <li class="search-box">
+                                        <a href="/search/">
+                                        <i class='bx bx-search icon'></i>
+                                        <input type="text" placeholder="Search...">
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-link">
+                                        <a href="">
+                                            <i class='bx bx-bar-chart-alt-2 icon'></i>
+                                            <span class="text nav-text">manage subscription</span>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-link">
+                                        <a href="/updates">
+                                            <i class='bx bx-bell icon'></i>
+                                            <span class="text nav-text">Updates&FAQ</span>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-link">
+                                        <a href="#">
+                                            <i class='bx bx-pie-chart-alt icon'></i>
+                                            <span class="text nav-text">settings</span>
+                                        </a>
+                                    </li>
+                                
+                                    <!-- <li class="nav-link">
+                                        <a href="#">
+                                            <i class='bx bx-heart icon'></i>
+                                            <span class="text nav-text">Likes</span>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-link">
+                                        <a href="#">
+                                            <i class='bx bx-wallet icon'></i>
+                                            <span class="text nav-text">Wallets</span>
+                                        </a>
+                                    </li> -->
+                                
+                                </ul>
+                            </div>
+                        
+                            <!-- <div class="bottom-content">
+                                <li class="">
+                                    <a href="#">
+                                        <i class='bx bx-log-out icon'></i>
+                                        <span class="text nav-text">Logout</span>
+                                    </a>
+                                </li> -->
+                            
+                            <li class="mode">
+                                <div class="sun-moon">
+                                    <i class='bx bx-moon icon moon'></i>
+                                    <i class='bx bx-sun icon sun'></i>
+                                </div>
+                                <span class="mode-text text">Dark mode</span>
+                            
+                                <div class="toggle-switch">
+                                    <span class="switch"></span>
+                                </div>
+                            </li>
+                        
+                        </div>
+                        </nav>
+                    </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body" style="overflow-y:auto;">
+                        <div class="h-screen">
+                            <div class="max-w-full">
+                                <div class="relative flex col">
+                                    <button class="btn-top">
+                                        <span class="btn-line"></span>
+                                        <span class="btn-line"></span>
+                                    </button>
+                                    <div class="flex items-center">
+                                        <div class="d-flex">
+                                        <div class="title">Talking avatar video</div>
+                                        
+                                        <div class="flex items-center" style="margin-left: 120px;">
+                                            <div class="d-flex">
+                                            <button class="group" style="border: none; background-color: white;">
+                                                <image src="../static/images/star-icon.png">
+                                            </button>
+                                            <div style="padding-left: 10px; padding-right: 10px;">
+                                                <button class="group" style="border: none; background-color: white">
+                                                <image src="../static/images/share-icon.png"></button>
+                                            </div>
+                                            <div class="relative">
+                                                <button style="border: none; padding-left: 20px;background-color: white">
+                                                    <image src="../static/images/3-dots.icon.png">
+                                                </button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="relative">
+                                        <div class="max">
+                                            <div class="card">
+                                                <div class>
+                                                    <p>Create a talking avatar for this script:</p>
+                                                    <br>
+                                                    <p>Create a talking avatar for this script: "Welcome to our new product, the Talking Avatar Video Creator. With this powerful tool, you can easily create engaging videos featuring a virtual spokesperson that delivers your message in a personalized and natural way. Whether you're promoting a product, sharing information about your business, or delivering a training session, our AI-powered technology makes it easy to create professional-looking videos that grab attention and drive results. Try it out today and see the difference for yourself!"</p>
+                                                </div>
+                                                <div class="half-image">
+                                                    <img src="../static/tshirt.webp" style="position: absolute;
+                                                    height: 100%;
+                                                    width: 100%;
+                                                    inset: 0px;
+                                                    color: transparent;">
+                                                </div>
+                                                </div>
+                                            </div>
+                                            <div class="-mt-8">
+                                                <div class="caption1">Just now</div>
+                                                <div class="rounded">
+                                                    <img src="../static/avatar.webp" style="left:0; width:100%;
+                                                    height:100%; top:0; right:0; bottom: 0;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="max">
+                                            <div class="pt-6">
+                                                <div class="card" style="background-color: whitesmoke;padding-top: 1.5rem;
+                                                padding-bottom: 4rem;">                                                
+                                                    <div>
+                                                        <div class="flex" style="display: flex;">
+                                                            <div class="dots"></div>
+                                                            <div class="dots"></div>
+                                                            <div class="dots"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="items-end">                                    
+                                                    <div class="shrink">
+                                                        <!-- <image src="../static/images/3-dots.icon.png"></image> -->
+                                                        <image src="../static/logo-icon.webp" class="image" style="position: absolute;
+                                                        height: 100%; top: 0; left:0; right:0; bottom:0; display: inline-block; border-radius:1rem;
+                                                        width: 100%; object-fit: cover;
+                                                        inset: 0px;
+                                                        color: transparent;"></image>
+                                                    </div>
+                                                    <button class="btn-pause">
+                                                        <image src="../static/images/pause-icon.png"></image>
+                                                        Pause generating
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="max">
+                                                <div class="pt-6">
+                                                    <div class="card" style="background-color: whitesmoke;padding-top: 1.5rem;
+                                                    padding-bottom: 4rem;">                                                
+                                                        <div>
+                                                            <image src="../static/video-pic-1.webp" style="height: 100%; width: 100%;"></image>
+                                                            <button>
+                                                                <image src="../static/video-play.png" style="height: 1rem; width: 1rem;display: inline-block;
+                                                                vertical-align: middle;"></image>                                                          
+                                                            </button>                                                           
+                                                        </div>
+                                                        <div class="mt-4">
+                                                            "Based on the gender identified in the uploaded image, the video has been automatically generated with a male voice. However, you have the option to customize your video by selecting from the available options below."
+                                                        </div>
+                                                        <div>
+                                                            <div class="d-flex">
+                                                            <button class="btn-dark" style="margin-top: 15px;">
+                                                                <span>Download</span>
+                                                                <image src="../static/down-arrow.png" style="height: 1rem; width: 1rem;display: inline-block;
+                                                                vertical-align: middle;"></image> 
+                                                            </button>
+                                                            <div class="mr-4">
+                                                                <button class="items" style="margin-left: 10px;">
+                                                                    <span>English (United States)</span>
+                                                                    <image src="../static/images/arrow-down.png" style="height: 1rem; width: 1rem;display: inline-block;
+                                                                    vertical-align: middle;"></image>
+                                                                </button>
+                                                            </div>
+                                                            </div>
+                                                            <div class="mr-4">
+                                                                <button class="items" style="margin-left: 0px;">
+                                                                    <div class="shrink-0">voice</div>
+                                                                    <image src="../static/speaker-icon.png" style="height: 1rem; width: 1rem;display: inline-block;
+                                                                    vertical-align: middle;"></image>
+                                                                    <span>Jenny</span>
+                                                                    <image src="../static/images/arrow-down.png" style="height: 1rem; width: 1rem;display: inline-block;
+                                                                    vertical-align: middle;"></image>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="items-end">                                    
+                                                        <div class="shrink">
+                                                            <!-- <image src="../static/images/3-dots.icon.png"></image> -->
+                                                            <image src="../static/logo-icon.webp" class="image" style="position: absolute;
+                                                            height: 100%; top: 0; left:0; right:0; bottom:0; display: inline-block; border-radius:1rem;
+                                                            width: 100%; object-fit: cover;
+                                                            inset: 0px;
+                                                            color: transparent;"></image>
+                                                        </div>
+                                                        <button class="btn-pause">
+                                                            <image src="../static/images/pause-icon.png"></image>
+                                                            Pause generating
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

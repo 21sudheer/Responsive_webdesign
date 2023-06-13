@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="../static/style.css">
+
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+
+    <!--<title>Dashboard Sidebar Menu</title>-->
+</head>
+
+<body>
+    
+    <!-- <section class="home">
+        <div class="text">Dashboard Sidebar</div>
+    </section> -->
+    <!-- <div id="wrapper">
+
+  <aside id="sidebar-wrapper">
+    <div class="sidebar-brand">
+      <h2>Logo</h2>
+    </div>
+    <ul class="sidebar-nav">
+      <li class="active">
+        <a href="#"><i class="fa fa-home"></i>Home</a>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-plug"></i>Plugins</a>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-user"></i>Users</a>
+      </li>
+    </ul>
+  </aside>
+
+  <div id="navbar-wrapper">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand" id="sidebar-toggle"><i class="fa fa-bars"></i></a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <section id="content-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="content-title">Test</h2>
+          <p>Lorem ipsum...</p>
+        </div>
+      </div>
+  </section> -->
+
+</div>
+    <div class="container">
+        
+            <div class="row">
+                <div class="d-flex">
+                    <div class="col-md-3 col-lg-3">
+                        <div class="card">
+                            <nav class="sidebar close">
+                                <header>
+                                    <div class="image-text">
+                                        <span class="image">
+                                            <img src="../static/logo.svg" alt="1000px">
+                                        </span>
+                                    
+                                        <div class="text logo-text">
+                                            <span class="name"></span>
+                                            <!-- <span class="profession">Web developer</span> -->
+                                        </div>
+                                    </div>
+                                    <!-- <a href="#" class="navbar-brand" id="sidebar-toggle"><i class="fa fa-bars"></i></a> -->
+                                    <i class='bx bx-chevron-right toggle'></i>
+                                </header>
+                            
+                                <div class="menu-bar">
+                                    <div class="menu">
+                                        <li class="nav-link">
+                                            <div id="content"></div>
+                                            <a href="/" id="btn" >
+                                            
+                                                <i class='bx bx-message-rounded-dots'></i>
+                                                <span class="text nav-text">chats </span>
+                                            </a>
+                                        </li>
+                                        <!-- <li class="search-box">
+                                            <i class='bx bx-search icon'></i>
+                                            <input type="text" placeholder="Search...">
+                                        </li> -->
+                                    
+                                        <ul class="menu-links">
+                                            <!-- <li class="nav-link">
+                                                <a href="#">
+                                                
+                                                    <i class='bx bx-message-rounded-dots'></i>
+                                                    <span class="text nav-text">chart</span>
+                                                </a>
+                                            </li> -->
+                                            <li class="search-box">
+                                                <a href="/search/">
+                                                <i class='bx bx-search icon'></i>
+                                                <input type="text" placeholder="Search...">
+                                                </a>
+                                            </li>
+                                        
+                                            <li class="nav-link">
+                                                <a href="">
+                                                    <i class='bx bx-bar-chart-alt-2 icon'></i>
+                                                    <span class="text nav-text">manage subscription</span>
+                                                </a>
+                                            </li>
+                                        
+                                            <li class="nav-link">
+                                                <a href="/updates">
+                                                    <i class='bx bx-bell icon'></i>
+                                                    <span class="text nav-text">Updates&FAQ</span>
+                                                </a>
+                                            </li>
+                                        
+                                            <li class="nav-link">
+                                                <a href="#">
+                                                    <i class='bx bx-pie-chart-alt icon'></i>
+                                                    <span class="text nav-text">settings</span>
+                                                </a>
+                                            </li>
+                                        
+                                            <!-- <li class="nav-link">
+                                                <a href="#">
+                                                    <i class='bx bx-heart icon'></i>
+                                                    <span class="text nav-text">Likes</span>
+                                                </a>
+                                            </li>
+                                        
+                                            <li class="nav-link">
+                                                <a href="#">
+                                                    <i class='bx bx-wallet icon'></i>
+                                                    <span class="text nav-text">Wallets</span>
+                                                </a>
+                                            </li> -->
+                                        
+                                        </ul>
+                                    </div>
+                                
+                                    <!-- <div class="bottom-content">
+                                        <li class="">
+                                            <a href="#">
+                                                <i class='bx bx-log-out icon'></i>
+                                                <span class="text nav-text">Logout</span>
+                                            </a>
+                                        </li> -->
+                                    
+                                    <li class="mode">
+                                        <div class="sun-moon">
+                                            <i class='bx bx-moon icon moon'></i>
+                                            <i class='bx bx-sun icon sun'></i>
+                                        </div>
+                                        <span class="mode-text text">Dark mode</span>
+                                    
+                                        <div class="toggle-switch">
+                                            <span class="switch"></span>
+                                        </div>
+                                    </li>
+                                
+                                </div>
+                                </div>
+                            
+                            </nav>
+                        
+                         </div>
+                        </div>
+                    <div class="col-md-6 col-lg-6">
+                        <div class="card">
+                            <div class="card-body"> 
+                                <h1 class="title">Unlock the power of AI</h1>
+                                <h4 style="color:lightgrey;">Chat with the smartest AI - Experience the power<br> of AI with us</h4><br>
+        
+                                <li>
+                                    <i class="bi bi-image"></i>
+                                </li>
+        
+                                <button class="button button1" &#xF42A><i class="bi bi-image" ></i> Photo editing &#8594 </button><br><br>
+                                <button class="button button1">Video generation &#8594</button><br><br>
+                                <button class="button button1">Education feedback &#8594 </button><br><br>
+                                <button class="button button1">Code generation &#8594 </button><br><br>
+                                <button class="button button1">Audio generation &#8594 </button><br><br>
+        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                        <div class="card"> 
+                            <div class="card-body">                  
+                                <h4>Chat history</h4>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <nav class="sidebar">                        
+                        <header>
+                            <div class="image-text">
+                                <span class="image">
+                                <img src="../static/images/logo.png" alt="1000px">
+                                </span>
+                        
+                                <div class="text logo-text">
+                                <span class="name"></span>
+                                </div>
+                                
+                            </div>
+                            
+                        
+                            <i class='bx bx-chevron-right toggle'></i>
+                        </header>
+                
+                        <div class="menu-bar">
+                            <div class="menu">
+                            <li class="nav-link">
+                                <div id="content"></div>
+                                <a href="/" id="btn" >
+                                
+                                    <i class='bx bx-message-rounded-dots'></i>
+                                    <span class="text nav-text">chats </span>
+                                </a>
+                            </li>
+                            
+                        
+                            <ul class="menu-links">
+                                
+                                <li class="search-box">
+                                    <a href="/search/">
+                                    <i class='bx bx-search icon'></i>
+                                    <input type="text" placeholder="Search...">
+                                    </a>
+                                </li>
+                            
+                                <li class="nav-link">
+                                    <a href="/upfad/">
+                                        <i class='bx bx-bar-chart-alt-2 icon'></i>
+                                        <span class="text nav-text">manage subscription</span>
+                                    </a>
+                                </li>
+                            
+                                <li class="nav-link">
+                                    <a href="/updates">
+                                        <i class='bx bx-bell icon'></i>
+                                        <span class="text nav-text">Updates&FAQ</span>
+                                    </a>
+                                </li>
+                            
+                                <li class="nav-link">
+                                    <a href="#">
+                                        <i class='bx bx-pie-chart-alt icon'></i>
+                                        <span class="text nav-text">settings</span>
+                                    </a>
+                                </li>
+                            
+                               
+                            
+                            </ul>
+                            </div>
+                    
+                    
+                       
+                        
+                        <li class="mode">
+                            <div class="sun-moon">
+                                <i class='bx bx-moon icon moon'></i>
+                                <i class='bx bx-sun icon sun'></i>
+                            </div>
+                            <span class="mode-text text">Dark mode</span>
+                        
+                            <div class="toggle-switch">
+                                <span class="switch"></span>
+                            </div>
+                        </li>
+                    
+                        </div> 
+                        </div>                               
+                    </nav>
+        </div>
+    </div>
+    
+    </div>
+    
+    </script>
+    <script>
+
+        $(function(){
+            $('#btn').click(function(event){
+                event.preventDefault();
+                console.log("enters");
+                $("#content").load(this.href, function(){
+
+                });
+            });
+        });
+           
+    </script>
+
+    <script>
+        const body = document.querySelector('body'),
+            sidebar = body.querySelector('nav'),
+            toggle = body.querySelector(".toggle"),
+            searchBtn = body.querySelector(".search-box"),
+            modeSwitch = body.querySelector(".toggle-switch"),
+            modeText = body.querySelector(".mode-text");
+
+
+        toggle.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        })
+
+        searchBtn.addEventListener("click", () => {
+            sidebar.classList.remove("close");
+        })
+
+        modeSwitch.addEventListener("click", () => {
+            body.classList.toggle("dark");
+
+            if (body.classList.contains("dark")) {
+                modeText.innerText = "Light mode";
+            } else {
+                modeText.innerText = "Dark mode";
+
+            }
+        });
+    </script>
+
+</body>
+
+</html>

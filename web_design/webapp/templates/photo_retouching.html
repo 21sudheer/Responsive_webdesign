@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/photo_retouching.css">
+    <style>
+        
+        /* ::-webkit-scrollbar{
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track{
+            border-radius: 5px;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+        }
+        ::-webkit-scrollbar-thumb{
+            border-radius: 5px;
+            background-color: aquamarine;
+        } */
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6" data-bs-spy="scroll">
+                <div class="card">
+                    <div class="card-body" style="overflow-y: auto;">
+                        <div class="h-screen">
+                            <div class="max-w-full" >
+                                <div class="relative flex col">
+                                    <!-- <button style="justify-content: center; align-items: center;
+                                    flex-shrink: 0; width: 2rem; height: 2rem;">
+                                        <span></span>
+                                        <span></span>
+                                    </button> -->
+                                    <div class="flex items-center">
+                                    <div class="d-flex">
+                                        <div class="" >Photo retouching</div>
+                                        <div class="" style="padding-left: 150px;">
+                                            <button style="border: none;">
+                                                <image src="../static/images/star-icon.png">
+                                            </button>
+                                            <button style="border: none; ">
+                                                <image src="../static/images/share-icon.png">
+                                            </button>
+                                            <!-- <div> -->
+                                            <button style="border: none; padding-left: 20px;">
+                                                <image src="../static/images/3-dots.icon.png">
+                                            </button>
+                                            <!-- </div> -->
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="relative" tabindex="0" style="padding: 1.5rem; scroll-behavior: smooth;
+                                    overflow-y: auto;  position: relative;">
+                                        <!-- 1 -->
+                                        <div class="ml-auto" style="margin-left: auto; max-width: 50rem;">
+                                            <div class="card" style="padding-bottom: 4rem; padding-top: 1.5rem; padding-left: 1.5rem;
+                                            padding-right: 1.5rem; --tw-border-opacity: 1;
+                                            border-color: rgb(243 245 247/var(--tw-border-opacity));
+                                            border-width: 0.1875rem; border-radius: 1.25rem;">
+                                                <div>Retouch this photo</div>
+                                                <div class="half-image" style="--tw-space-y-reverse: 0;
+                                                margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+                                                margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+                                                width: 11.25rem; height: 11.25rem; position: relative;">
+                                                    <img src="../static/white-girl.webp" style="height: 30%; width: 30%;
+                                                    border-radius: 0.75rem; opacity: 1; position: absolute;
+                                                    height: 100%;
+                                                    width: 100%;
+                                                    inset: 0px;
+                                                    color: transparent;">
+                                            </div>
+                                            <div class="pr-6" style="padding-right: 1.5rem;
+                                            align-items: flex-end; margin-top: -2rem; display: flex;">
+                                                <div class="d-flex">                                                
+                                                <div class="caption1">Just now</div>
+                                                <div class="rounded">
+                                                    <img src="../static/avatar.webp" style="left:0; width:100%;
+                                                    height:100%; top:0; right:0; bottom: 0;"></div>
+                                                <!-- <div></div> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 2 -->
+                                        <div class="max">
+                                            <div class="pt-6">
+                                                <div class="card" style="background-color: whitesmoke;padding-top: 1.5rem;
+                                                padding-bottom: 4rem;">
+                                                
+                                                    <div>
+                                                        <div class="flex" style="display: flex;">
+                                                            <div class="dots"></div>
+                                                            <div class="dots"></div>
+                                                            <div class="dots"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="items-end">                                    
+                                                    <div class="shrink">
+                                                        <!-- <image src="../static/images/3-dots.icon.png"></image> -->
+                                                        <image src="../static/logo-icon.webp" class="image" style="position: absolute;
+                                                        height: 100%; top: 0; left:0; right:0; bottom:0; display: inline-block; border-radius:1rem;
+                                                        width: 100%; object-fit: cover;
+                                                        inset: 0px;
+                                                        color: transparent;"></image>
+                                                    </div>
+                                                    <button class="btn-pause">
+                                                        <image src="../static/images/pause-icon.png"></image>
+                                                        Pause generating
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div></div>
+                                        </div>
+                                        <!-- 3 -->
+                                        <div class="max">
+                                            <div class="pt-6">
+                                                <div class="card" style="background-color: whitesmoke;padding-top: 1.5rem;
+                                                padding-bottom: 4rem;">
+                                                    <div>I have implemented modifications to the lighting, color, and sharpness parameters, resulting in the elimination of blemishes and imperfections present in the image.</div>
+                                                    <div class="image">
+                                                        <image src="../static/photo-retouch.icaon.webp" style="height: 100%; width: 100%;">
+                                                    </div>
+                                                    <div class="flex-wrap">
+                                                        <div class="d-flex">
+                                                            <div class="relative">
+                                                                <button class="btn-dark" style="width: 220%;">
+                                                                    <span>Export</span>
+                                                                    <image src="../static/images/share-icon.png" style="color: white;"></image>
+                                                                </button>
+                                                            </div>
+                                                            <br>
+                                                            <button class="btn-white" style="width: 100%;">
+                                                                <span style="padding-left: 20px;">create variation</span>
+                                                                <image class="inline-block" src="../static/images/round-plus-icon.png">    
+                                                            </button>
+                                                        
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <div class="relative">
+                                                                <button class="btn-adjust" style="width: 200%;">
+                                                                    <span>Adjust</span>
+                                                                    <image src="../static/images/share-icon.png">
+                                                                </button>
+                                                            </div>
+                                                            <button class="btn-white" style="width: 150%;">
+                                                                <span style="padding-left: 50px; text-align: center;padding-right: 50;">Enhance</span>
+                                                                <image class="inline-block" src="../static/images/right arrow-icon.png">
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="items-end">
+                                                <div class="relative">
+                                                    <!-- <image src="../static/images/right arrow-icon.png"> -->
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <div class="d-flex">
+                                                    <div class="caption1">Just now</div>
+                                                    <button class="h-6">Copy</button>
+                                                    <button class="h-6">Regenerate response</button>
+                                                    <div class>                           
+                                                        <button class="h-6" style="display: inline-block;">
+                                                            <image src="../static/smile-heart-eyes.webp"></image>
+                                                        </button>
+                                                        <button class="h-6">
+                                                            <image src="../static/smile-unamused.webp"></image>
+                                                        </button>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 4 -->
+                                        <div class="">
+                                            <div class="card"  style="background-color: whitesmoke;padding-top: 1.5rem;
+                                            padding-bottom: 4rem;">
+                                                <div>Looks great, let's remove text on hoodie and make it blue</div>
+                                            </div>
+                                            <div class="-mt-8">
+                                                <div class="caption1">Just now</div>
+                                                <div class="relative">
+                                                    <img src="../static/avatara.webp" style="height: 30%; width: 30%;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 5 -->
+                                        <div class="max">
+                                            <div class="pt-6">
+                                                <div class="card" style="background-color: whitesmoke;padding-top: 1.5rem;
+                                                padding-bottom: 4rem;">
+                                                    <div>You can adjust the color of hoodie manually</div>
+                                                    <div class="image">
+                                                        <img src="../static/photo blue-icon.webp" style="height: 100%; width: 100%;">
+                                                        <button class="absolute">
+                                                            <div class="rounded" style="background-color: rgb(70, 103, 188);"></div>
+                                                        </button>
+                                                    </div>
+                                                    <div class="flex-wrap">
+                                                        <div class="d-flex">
+                                                            <div class="relative">
+                                                                <button class="btn-dark" style="width: 220%;">
+                                                                    <span>Export</span>
+                                                                    <image src="../static/images/share-icon.png">
+                                                                </button>
+                                                            </div>
+                                                            <button class="btn-white" style="width: 100%;">
+                                                                <span style="padding-left: 20px;">create variation</span>
+                                                                <image class="inline-block" src="../static/images/round-plus-icon.png">
+                                                                
+                                                            </button>
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <div class="relative">
+                                                                <button class="btn-adjust"  style="width: 200%;">
+                                                                    <span>Adjust</span>
+                                                                    <image src="../static/images/share-icon.png">
+                                                                </button>
+                                                            </div>
+                                                            <button class="btn-white" style="width: 150%;">
+                                                                <span style="padding-left: 50px; text-align: center;padding-right: 50;">Enhance</span>
+                                                                <image class="inline-block" src="../static/images/right arrow-icon.png">
+                                                            </button> 
+                                                            </div>
+                                                        </div>                                       
+                                                    </div>
+                                                </div>
+                                                <div class="items-end">
+                                                    <div class="relative">
+                                                        <!-- <image src="../static/images/right arrow-icon.png"> -->
+                                                    </div>
+                                                    <div class="flex items-center">
+                                                        <div class="d-flex">
+                                                        <div class="caption1">Just now</div>
+                                                        <button class="h-6">Copy</button>
+                                                        <button class="h-6">Regenerate response</button>
+                                                        <div class="h-6">                           
+                                                            <button class style="border: none; margin-top: 10px;">
+                                                                <image class="h-6" src="../static/smile-heart-eyes.webp"></image>
+                                                            </button>
+                                                            <button class style="border: none;">
+                                                                <image class="h-6" src="../static/smile-unamused.webp"></image>
+                                                            </button>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+            
+                                                </div>
+            
+                                            </div>
+                                            <div></div>
+                                        </div>
+                                        <!-- 6 -->
+                                        <div class="max">
+                                            <div class="pt-6">
+                                                <div class="card" style="background-color: whitesmoke;padding-top: 1.5rem;
+                                                padding-bottom: 4rem;">
+                                                    <div>variation one</div>
+                                                    <div class="relative">
+                                                        <img src="../static/photo light.icon.webp" style="height: 100%; width: 100%;">
+                                                        <button class="absolute">
+                                                            <div class="rounded" style="background-color: rgb(70, 103, 188);"></div>
+                                                        </button>
+                                                    </div>
+                                                    <div class="flex-wrap">
+                                                        <div class="d-flex">
+                                                        <div class="relative">
+                                                            <button class="btn-dark" style="width: 220%;">
+                                                                <span>Export</span>
+                                                                <image src="../static/images/share-icon.png">
+                                                            </button>
+                                                        </div>
+                                                        <button class="btn-white" style="width: 100%;">
+                                                            <span style="padding-left: 20px;">create variation</span>
+                                                            <image class="inline-block" src="../static/images/round-plus-icon.png">
+            
+                                                        </button>
+                                                        </div>
+                                                        <div class="d-flex">
+                                                        <div class="relative">
+                                                            <button class="btn-adjust"  style="width: 200%;">
+                                                                <span>Adjust</span>
+                                                                <image src="../static/images/share-icon.png">
+                                                            </button>
+                                                        </div>
+                                                        <button class="btn-white" style="width: 150%;">
+                                                            <span style="padding-left: 50px; text-align: center;padding-right: 50;">Enhance</span>
+                                                            <image class="inline-block" src="../static/images/right arrow-icon.png">
+                                                        </button>
+                                                        </div>                                        
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="items-end">
+                                                    <div class="relative">
+                                                        <!-- <image src="../static/images/right arrow-icon.png"> -->
+                                                    </div>
+                                                    <div class="flex items-center">
+                                                        <div class="d-flex">
+                                                        <div class="caption1">Just now</div>
+                                                        <button class="h-6">Copy</button>
+                                                        <button class="h-6">Regenerate response</button>
+                                                        <div class="h-6">                           
+                                                            <button class style="border: none; margin-top: 10px;">
+                                                                <image class="h-6" src="../static/smile-heart-eyes.webp"></image>
+                                                            </button>
+                                                            <button style="border: none;">
+                                                                <image class="h-6" src="../static/smile-unamused.webp"></image>
+                                                            </button>
+                                                        </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+            
+                                                </div>
+            
+                                            </div>
+                                            <div></div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
