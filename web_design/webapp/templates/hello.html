@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/css/photo_retouching.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="d-flex">
+            <div class="col-lg-3">
+                <div class="card">
+                    <nav class="sidebar close">
+                        <header>
+                            <div class="image-text">
+                                <span class="image">
+                                    <img src="../static/logo.svg" alt="1000px">
+                                </span>
+                            
+                                <div class="text logo-text">
+                                    <span class="name"></span>
+                                    <!-- <span class="profession">Web developer</span> -->
+                                </div>
+                            </div>
+                            <!-- <a href="#" class="navbar-brand" id="sidebar-toggle"><i class="fa fa-bars"></i></a> -->
+                            <i class='bx bx-chevron-right toggle'></i>
+                        </header>
+                    
+                        <div class="menu-bar">
+                            <div class="menu">
+                                <li class="nav-link">
+                                    <div id="content"></div>
+                                    <a href="/" id="btn" >
+                                    
+                                        <i class='bx bx-message-rounded-dots'></i>
+                                        <span class="text nav-text">chats </span>
+                                    </a>
+                                </li>
+                                <!-- <li class="search-box">
+                                    <i class='bx bx-search icon'></i>
+                                    <input type="text" placeholder="Search...">
+                                </li> -->
+                            
+                                <ul class="menu-links">
+                                    <!-- <li class="nav-link">
+                                        <a href="#">
+                                        
+                                            <i class='bx bx-message-rounded-dots'></i>
+                                            <span class="text nav-text">chart</span>
+                                        </a>
+                                    </li> -->
+                                    <li class="search-box">
+                                        <a href="/search/">
+                                        <i class='bx bx-search icon'></i>
+                                        <input type="text" placeholder="Search...">
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-link">
+                                        <a href="">
+                                            <i class='bx bx-bar-chart-alt-2 icon'></i>
+                                            <span class="text nav-text">manage subscription</span>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-link">
+                                        <a href="/updates">
+                                            <i class='bx bx-bell icon'></i>
+                                            <span class="text nav-text">Updates&FAQ</span>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-link">
+                                        <a href="#">
+                                            <i class='bx bx-pie-chart-alt icon'></i>
+                                            <span class="text nav-text">settings</span>
+                                        </a>
+                                    </li>
+                                
+                                    <!-- <li class="nav-link">
+                                        <a href="#">
+                                            <i class='bx bx-heart icon'></i>
+                                            <span class="text nav-text">Likes</span>
+                                        </a>
+                                    </li>
+                                
+                                    <li class="nav-link">
+                                        <a href="#">
+                                            <i class='bx bx-wallet icon'></i>
+                                            <span class="text nav-text">Wallets</span>
+                                        </a>
+                                    </li> -->
+                                
+                                </ul>
+                            </div>
+                        
+                            <!-- <div class="bottom-content">
+                                <li class="">
+                                    <a href="#">
+                                        <i class='bx bx-log-out icon'></i>
+                                        <span class="text nav-text">Logout</span>
+                                    </a>
+                                </li> -->
+                            
+                            <li class="mode">
+                                <div class="sun-moon">
+                                    <i class='bx bx-moon icon moon'></i>
+                                    <i class='bx bx-sun icon sun'></i>
+                                </div>
+                                <span class="mode-text text">Dark mode</span>
+                            
+                                <div class="toggle-switch">
+                                    <span class="switch"></span>
+                                </div>
+                            </li>
+                        
+                        </div>
+                        </nav>
+                    </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body" style="overflow-y:auto;">
+                        <div class="h-screen">
+                            <div class="max-w-full">
+                                <div class="relative flex col">
+                                    <button class="btn-top">
+                                        <span class="btn-line"></span>
+                                        <span class="btn-line"></span>
+                                    </button>
+                                    <div class="flex items-center">
+                                        <div class="d-flex">
+                                        <div class="title">Hello</div>
+                                        
+                                        <div class="flex items-center" style="margin-left: 120px;">
+                                            <div class="d-flex">
+                                            <button class="group" style="border: none; background-color: white;">
+                                                <image src="../static/images/star-icon.png">
+                                            </button>
+                                            <div style="padding-left: 10px; padding-right: 10px;">
+                                                <button class="group" style="border: none; background-color: white">
+                                                <image src="../static/images/share-icon.png"></button>
+                                            </div>
+                                            <div class="relative">
+                                                <button style="border: none; padding-left: 20px;background-color: white">
+                                                    <image src="../static/images/3-dots.icon.png">
+                                                </button>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="relative" style="scroll-behavior: smooth;
+                                    overflow-y: auto;flex-grow: 1;z-index: 2;position: relative;">
+                                        <div class="max" style="margin-left: auto;">
+                                            <div class="card" style="padding-top: 1.5rem;
+                                            padding-bottom: 1rem;">
+                                                <div class>
+                                                    <p>Hello </p>
+                                                    <br>
+                                             </div>   
+                                            </div>
+                                            <div class="-mt-8">
+                                                <div class="caption1">Just now</div>
+                                                <div class="rounded">
+                                                    <img src="../static/avatar.webp" style="left:0; width:100%;
+                                                    height:100%; top:0; right:0; bottom: 0;margin-bottom:0px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>                                                              
+                                        <div class="max">
+                                            <div class="pt-6">
+                                                <div class="card" style="background-color: whitesmoke;padding-top: 1.5rem;
+                                                padding-bottom: 4rem; margin-left: 0px;">                                                
+                                                    <div>
+                                                        <div class="flex" style="display: flex;">
+                                                            <span>Hello! How can I help you today?</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="items-end">                                    
+                                                    <div class="shrink">
+                                                        <!-- <image src="../static/images/3-dots.icon.png"></image> -->
+                                                        <image src="../static/logo-icon.webp" class="image" style="position: absolute;
+                                                        height: 100%; top: 0; left:0; right:0; bottom:0; display: inline-block; border-radius:1rem;
+                                                        width: 100%;object-fit: cover;
+                                                        inset: 0px;
+                                                        color: transparent;"></image>
+                                                    </div>
+                                                    <div class="d-flex" style="margin-top: 50px; margin-left: 10px;">
+                                                        <!-- <div class="caption1">Just now</div> -->
+                                                        <button class="h-6">Copy</button>
+                                                        <button class="h-6">Regenerate response</button>
+                                                        <div class="d-flex">                           
+                                                            <button class style="border: none;">
+                                                                <image src="../static/smile-heart-eyes.webp"></image>
+                                                            </button>
+                                                            <button class style="border: none;">
+                                                                <image src="../static/smile-unamused.webp"></image>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- <div class="d-flex" style="margin-top: 100px; margin-left: 10px;">
+                                                        <div class="caption1">Just now</div>
+                                                        <button class="h-6">Copy</button>
+                                                        <button class="h-6">Regenerate response</button>
+                                                        <div class="h-6">                           
+                                                            <button class style="border: none; margin-top: 10px;">
+                                                                <image class="h-6" src="../static/smile-heart-eyes.webp"></image>
+                                                            </button>
+                                                            <button class style="border: none;">
+                                                                <image class="h-6" src="../static/smile-unamused.webp"></image>
+                                                            </button>
+                                                        </div>
+                                                        </div> -->
+                                                </div>
+                                            </div>
+                                            <div class="relative" style="padding: 1.5rem;scroll-behavior: smooth;
+                                            overflow-y: auto;flex-grow: 1;z-index: 2;position: relative;">
+                                                <div class="max" style="margin-left: auto;">
+                                                    <div class="card">
+                                                        <div class>
+                                                            <p>Show me what you can do</p>
+                                                            <br>
+                                                        </div>
+                                                    
+                                                        </div>
+                                                    </div>
+                                                    <div class="-mt-8">
+                                                        <div class="caption1">Just now</div>
+                                                        <div class="rounded">
+                                                            <img src="../static/avatar.webp" style="left:0; width:100%;
+                                                            height:100%; top:0; right:0; bottom: 0;"></div>
+                                                    </div>
+                                            </div>
+                                            <div class="max">
+                                                <div class="pt-6">
+                                                <div class="card" style="background-color: whitesmoke;padding-top: 1.5rem;
+                                                padding-bottom: 4rem;">                                                
+                                                    <div>
+                                                        <div class="flex" style="display: flex;">
+                                                            <div class="dots"></div>
+                                                            <div class="dots"></div>
+                                                            <div class="dots"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="items-end">                                    
+                                                    <div class="shrink">
+                                                        <!-- <image src="../static/images/3-dots.icon.png"></image> -->
+                                                        <image src="../static/logo-icon.webp" class="image" style="position: absolute;
+                                                        height: 100%; top: 0; left:0; right:0; bottom:0; display: inline-block; border-radius:1rem;
+                                                        width: 100%;object-fit: cover;
+                                                        inset: 0px;
+                                                        color: transparent;"></image>
+                                                    </div>
+                                                    <button class="btn-pause">
+                                                        <image src="../static/images/pause-icon.png"></image>
+                                                        Pause generating
+                                                    </button>
+                                                </div>
+                                            </div>
+
+
+                                                <!-- <div class="pt-6">
+                                                    <div class="card" style="background-color: whitesmoke;padding-top: 1.5rem;
+                                                    padding-bottom: 4rem;">                                                
+                                                        <div>
+                                                            <image src="../static/video-pic-1.webp" style="height: 100%; width: 100%;"></image>
+                                                            <button>
+                                                                <image src="../static/video-play.png" style="height: 1rem; width: 1rem;display: inline-block;
+                                                                vertical-align: middle;"></image>                                                          
+                                                            </button>                                                           
+                                                        </div>
+                                                        <div class="mt-4">
+                                                            "Based on the gender identified in the uploaded image, the video has been automatically generated with a male voice. However, you have the option to customize your video by selecting from the available options below."
+                                                        </div>
+                                                        <div>
+                                                            <div class="d-flex">
+                                                            <button class="btn-dark" style="margin-top: 15px;">
+                                                                <span>Download</span>
+                                                                <image src="../static/down-arrow.png" style="height: 1rem; width: 1rem;display: inline-block;
+                                                                vertical-align: middle;"></image> 
+                                                            </button>
+                                                            <div class="mr-4">
+                                                                <div class="dropdown">
+                                                                    <button class="items" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                                                        style="border-radius: 9999px;">
+                                                                        <span>English (United States)</span>
+                                                                        <image src="../static/images/arrow-down.png" style="height: 1rem; width: 1rem;display: inline-block;
+                                                                        vertical-align: middle;"></image>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><button class="dropdown-item" type="button">English (United States)</button></li>
+                                                                        <li><button class="dropdown-item" type="button">French</button></li>
+                                                                        <li><button class="dropdown-item" type="button">Ukrainian</button></li>
+                                                                      </ul>
+                                                                <button class="items" style="margin-left: 10px;">
+                                                                    <span>English (United States)</span>
+                                                                    <image src="../static/images/arrow-down.png" style="height: 1rem; width: 1rem;display: inline-block;
+                                                                    vertical-align: middle;"></image>
+                                                                </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mr-4">
+                                                                <div class="dropdown">
+                                                                    <button class="items" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                                                    style="border-radius: 9999px;">
+                                                                        <div class="">voice</div>
+                                                                        <image src="../static/speaker-icon.png" style="height: 1rem; width: 1rem;display: inline-block;
+                                                                        vertical-align: middle;"></image>
+                                                                        <span>Jenny</span>
+                                                                        <image src="../static/images/arrow-down.png" style="height: 1rem; width: 1rem;display: inline-block;
+                                                                        vertical-align: middle;"></image>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><button class="dropdown-item" type="button">Jenny</button></li>
+                                                                        <li><button class="dropdown-item" type="button">Mark</button></li>
+                                                                        <li><button class="dropdown-item" type="button">Jack</button></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="items-end"> 
+                                                        <div class="flex items-center" style="margin-top: 50px;">
+                                                            <div class="shrink">
+                                                                <image src="../static/logo-icon.webp"></image>
+                                                            </div>
+                                                            <div class="d-flex" style="margin-top: 100px; margin-left: 10px;">
+                                                            <div class="caption1">Just now</div>
+                                                            <button class="h-6">Copy</button>
+                                                            <button class="h-6">Regenerate response</button>
+                                                            <div class="h-6">                           
+                                                                <button class style="border: none; margin-top: 10px;">
+                                                                    <image class="h-6" src="../static/smile-heart-eyes.webp"></image>
+                                                                </button>
+                                                                <button class style="border: none;">
+                                                                    <image class="h-6" src="../static/smile-unamused.webp"></image>
+                                                                </button>
+                                                            </div>
+                                                            </div>
+                                                        </div>                                   
+                                                        <div class="shrink">
+                                                            <image src="../static/images/3-dots.icon.png"></image>
+                                                            <image src="../static/logo-icon.webp" class="image" style="position: absolute;
+                                                            height: 100%; top: 0; left:0; right:0; bottom:0; display: inline-block; border-radius:1rem;
+                                                            width: 100%; object-fit: cover;
+                                                            inset: 0px;
+                                                            color: transparent;"></image>
+                                                        </div>
+                                                        <button class="btn-pause">
+                                                            <image src="../static/images/pause-icon.png"></image>
+                                                            Pause generating
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                        <div class="max">
+                                            <div class="pt-6">
+                                            <div class="card" style="background-color: whitesmoke;padding-top: 1.5rem;
+                                            padding-bottom: 4rem;">                                                
+                                                <div>
+                                                    <div class="flex" style="display: flex;">
+                                                        <span>I’m Brainwave - a versatile and powerful tool for users seeking to enhance their experience with ChatGPT. It offers a wide range of advanced features to improve functionality and efficiency. With this tool, you can expect the following capabilities:</span>
+                                                    </div>
+                                                    <br>
+                                                    <div class="flex-wrap" style="flex-wrap: wrap;display: flex;
+                                                    margin-top: -0.5rem;margin-left: -0.5rem;">
+                                                        <!-- <a href="">
+                                                            <div>
+                                                                <div></div>
+                                                                <image></image>
+                                                            </div>
+                                                            Photo editing
+                                                        </a>
+                                                        <a></a>
+                                                        <a></a>
+                                                        <a></a>
+                                                        <a></a> -->
+                                                        <a href="/photo_retouching/" class="button button1"><image src="../static/images/photo1.icon.png" style="background-color: rgb(186, 151, 243); width:30px; height:30px; border-radius: 20px;">Photo editing  </a><br>                               
+                                                        <a href="/talking_avatar/" class="button button1" ><image src="../static/images/video-icon.png">Video generation </a><br>
+                                                        <a hef="" class="button button1"><image src="../static/images/education-icon.png">Education feedback  </a><br>
+                                                        <a href="" class="button button1"><image src="../static/images/code-icon.png">Code generation  </a><br>
+                                                        <a href="" class="button button1"><image src="../static/images/Audio-icon.png">Audio generation </a><br>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="items-end">                                    
+                                                <div class="shrink">
+                                                    <!-- <image src="../static/images/3-dots.icon.png"></image> -->
+                                                    <image src="../static/logo-icon.webp" class="image" style="position: absolute;
+                                                    height: 100%; top: 0; left:0; right:0; bottom:0; display: inline-block; border-radius:1rem;
+                                                    width: 100%;object-fit: cover;
+                                                    inset: 0px;
+                                                    color: transparent;"></image>
+                                                </div>
+                                                <div class="d-flex" style="margin-top: 50px; margin-left: 10px;">
+                                                    <div class="caption1">Just now</div>
+                                                    <button class="h-6">Copy</button>
+                                                    <button class="h-6">Regenerate response</button>
+                                                    <div class="d-flex">                           
+                                                        <button class style="border: none;">
+                                                            <image src="../static/smile-heart-eyes.webp"></image>
+                                                        </button>
+                                                        <button class style="border: none;">
+                                                            <image src="../static/smile-unamused.webp"></image>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <!-- <button class="btn-pause">
+                                                    <image src="../static/images/pause-icon.png"></image>
+                                                    Pause generating
+                                                </button> -->
+                                            </div>
+                                        </div>
+                                            
+                                        </div>
+                                        </div>
+                                        <div class="relative" style="padding: 1.5rem;scroll-behavior: smooth;
+                                            overflow-y: auto;flex-grow: 1;z-index: 2;position: relative;">
+                                                <div class="max" style="margin-left: auto;">
+                                                    <div class="card">
+                                                        <div class>
+                                                            <p>Text to speech voice:</p>
+                                                            <p>Introducing "Brainwave", an AI-powered product that can turn any written script into high-quality audio. Using advanced natural language processing and text-to-speech technology, Speechify can generate realistic and natural-sounding voices in multiple languages, allowing you to create audiobooks, podcasts, and other audio content with ease. Additionally, Speechify offers a wide range of customization options, including different voices, speaking styles, and even emotions, so you can create audio that perfectly matches your brand or project. With Speechify, creating audio content has never been easier.</p>
+
+                                                            <br>
+                                                        </div>
+                                                    
+                                                        </div>
+                                                    </div>
+                                                    <div class="-mt-8">
+                                                        <div class="caption1">Just now</div>
+                                                        <div class="rounded">
+                                                            <img src="../static/avatar.webp" style="left:0; width:100%;
+                                                            height:100%; top:0; right:0; bottom: 0;"></div>
+                                                    </div>
+                                        <div></div>
+                                    </div>
+                                    <div class="max">
+                                        <div class="pt-6">
+                                        <div class="card" style="background-color: whitesmoke;padding-top: 1.5rem;
+                                        padding-bottom: 4rem;">                                                
+                                            <div>
+                                                <div class="flex" style="display: flex;">
+                                                    <span>Your audio has been successfully generated. You may further customize it or simply download it for use.</span>
+                                                </div>
+                                                <br>
+                                                <div class="flex-wrap" style="flex-wrap: wrap;display: flex;
+                                                margin-top: -0.5rem;margin-left: -0.5rem;">
+                                                   <div class="">
+                                                        <div class="items-center">
+                                                            <div class="d-flex">
+                                                                <button class="shrink-0">
+                                                                    <img src="../static/images/pause-icon.png" style="left:0; width:100%;
+                                                                    height:100%; top:0; right:0; bottom: 0;"></div>
+                                                                </button>
+                                                                <div>
+                                                                    <img src="../static/images/audio clip.png" style="left:0; width:100%;
+                                                                    height:100%; top:0; right:0; bottom: 0;"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="caption2">
+                                                            <div class="d-flex">
+                                                                <div class="caption2">0:21</div>
+                                                                <div class="caption2" style="margin-left: 100px;">1:02</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-wrap">
+                                                            <div class="export">
+                                                                <button class="btn-dark">
+                                                                    <span>Export</span>
+                                                                    <img src="../static/images/share-icon.png" style="left:0; width:100%;
+                                                                    height:100%; top:0; right:0; bottom: 0;">
+                                                                </button>
+                                                            </div>
+                                                            <button class="edit" >
+                                                                <span>Edit</span>
+                                                                <img src="../static/images/pen-icon.png" >
+                                                            </button>
+                                                            <div>
+                                                                <div class="dropdown">
+                                                                    <button class="edit" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                                                        style="border-radius: 9999px;">
+                                                                        <span>English (United States)</span>
+                                                                        <image src="../static/images/arrow-down.png" style="height: 1rem; width: 1rem;display: inline-block;
+                                                                        vertical-align: middle;"></image>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><button class="dropdown-item" type="button">English (United States)</button></li>
+                                                                        <li><button class="dropdown-item" type="button">French</button></li>
+                                                                        <li><button class="dropdown-item" type="button">Ukrainian</button></li>
+                                                                      </ul>
+                                                                
+                                                                </div>
+                                                                <!-- <button class="edit">
+                                                                    <span>English (US)</span>
+                                                                    <img src="../static/images/arrow-down.png">
+                                                                </button> -->
+                                                            </div>
+                                                            <div>
+                                                                <div class="dropdown">
+                                                                    <button class="edit" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                                                        style="border-radius: 9999px;">
+                                                                        <div class="shrink-0">speed</div>
+                                                                        <span>Normal</span>
+                                                                        <image src="../static/images/arrow-down.png" style="height: 1rem; width: 1rem;display: inline-block;
+                                                                        vertical-align: middle;"></image>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><button class="dropdown-item" type="button">Normal</button></li>
+                                                                        <li><button class="dropdown-item" type="button">1.25x</button></li>
+                                                                        <li><button class="dropdown-item" type="button">1.5x</button></li>
+                                                                      </ul>
+                                                                
+                                                                </div>
+                                                                <!-- <button class="edit">
+                                                                    <div class="shrink-0">speed</div>
+                                                                    <span>Normal</span>
+                                                                    <img src="../static/images/arrow-down.png">
+                                                                </button> -->
+                                                            </div>
+                                                            <div>
+                                                                <div class="">
+                                                                    <div class="dropdown">
+                                                                        <button class="edit" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                                                            style="border-radius: 9999px;">
+                                                                            <div class="shrink-0">Voice</div>
+                                                                            <span>Female</span>
+                                                                            <image src="../static/images/arrow-down.png" style="height: 1rem; width: 1rem;display: inline-block;
+                                                                            vertical-align: middle;"></image>
+                                                                            <div class="self-center"></div>
+
+                                                                            <img src="../static/speaker-icon.png">
+                                                                            <span class>Jenny</span>
+                                                                            <img src="../static/images/arrow-down.png">
+                                                                        </button>
+                                                                        <ul class="dropdown-menu">
+                                                                            <li><button class="dropdown-item" type="button">Female</button></li>
+                                                                            <li><button class="dropdown-item" type="button">Man</button></li>
+                                                                          </ul>
+                                                                    
+                                                                    </div>
+                                                                    <!-- <button class="edit">
+                                                                        <div class="shrink-0">Voice</div>
+                                                                        <span >Female</span>
+                                                                        <img src="../static/images/arrow-down.png">                                                               
+                                                                        <div class="self-center"></div>
+                                                               
+                                                                        <img src="../static/speaker-icon.png">
+                                                                        <span class>Jenny</span>
+                                                                        <img src="../static/images/arrow-down.png">
+                                                                    </button> -->
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            <div>
+                                                                <div class="dropdown">
+                                                                    <button class="edit" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                                                        style="border-radius: 9999px;">
+                                                                        <span>&#128512; Friendly</span>
+                                                                        <image src="../static/images/arrow-down.png" style="height: 1rem; width: 1rem;display: inline-block;
+                                                                        vertical-align: middle;"></image>
+                                                                    </button>
+                                                                    <ul class="dropdown-menu">
+                                                                        <li><button class="dropdown-item" type="button">&#128512; Friendly</button></li>
+                                                                        <li><button class="dropdown-item" type="button">&#128528; Neutral</button></li>
+                                                                        <li><button class="dropdown-item" type="button">&#128538; kissing</button></li>
+                                                                      </ul>
+                                                                
+                                                                </div>
+                                                                <!-- <button class="edit">
+                                                                    <span>&#128512; Friendly</span>
+                                                                    <img src="../static/images/arrow-down.png">
+                                                                </button> -->
+                                                            </div>
+                                                            <div></div>
+                                                        </div>
+                                                   </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="items-end">                                    
+                                            <div class="shrink">
+                                                <!-- <image src="../static/images/3-dots.icon.png"></image> -->
+                                                <image src="../static/logo-icon.webp" class="image" style="position: absolute;
+                                                height: 100%; top: 0; left:0; right:0; bottom:0; display: inline-block; border-radius:1rem;
+                                                width: 100%;object-fit: cover;
+                                                inset: 0px;
+                                                color: transparent;"></image>
+                                            </div>
+                                            <!-- <button class="btn-pause">
+                                                <image src="../static/images/pause-icon.png"></image>
+                                                Pause generating
+                                            </button> -->
+                                            <div class="d-flex" style="margin-left: 20px;">
+                                                <div class="caption1">Just now</div>
+                                                <button class="h-6">Copy</button>
+                                                <button class="h-6">Regenerate response</button>
+                                                <div class="d-flex">                           
+                                                    <button class style="border: none;">
+                                                        <image src="../static/smile-heart-eyes.webp"></image>
+                                                    </button>
+                                                    <button class style="border: none;">
+                                                        <image src="../static/smile-unamused.webp"></image>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

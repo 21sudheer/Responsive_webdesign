@@ -48,3 +48,7 @@ def photo_retouching(request):
 
 def talking_avatar(request):
     return render(request, "talking_avatar.html")
+
+
+def hello(request):
+    return render(request, "hello.html")
