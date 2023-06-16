@@ -1,0 +1,99 @@
+.card-body {
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+.card-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.card-body::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+.form-control {
+    border-radius: .75rem;
+    padding-bottom: 1.25rem;
+    padding-left: 1.5rem;                               
+    padding-right: 1.5rem;
+    height: 60px;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+}    
+.c-cnt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .card.hover{
+    background-color: aliceblue;
+
+} */
+.card-m {
+    transition: transform 0.3s;
+  }
+  
+  .card-m:hover {
+    justify-self: end;
+    text-align: center;
+    border-radius: 0.75rem;
+    background-color:rgba(232,236,239,.75);
+    transform: scale(1.05);
+  }
+
+.cnrt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: whitesmoke;  */
+    margin-bottom: 1rem;
+    
+}  
+.ct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: whitesmoke;  */
+    margin-bottom: 1rem;  
+}
+.tr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: whitesmoke;  */
+    margin-bottom: 1rem;
+}
+.rt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: whitesmoke;  */
+    margin-bottom: 1rem; 
+} 
+.fa-search-plus{
+    justify-content: end;
+}
+
+.col-lg-4{
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;   
+}
+.col-lg-4::-webkit-scrollbar {
+    width: 8px;
+}
+.c0l-lg-4::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+.scroll-container {
+    max-height: 300px; /* Set a maximum height for the container */
+    overflow-y: auto; /* Enable vertical scrolling */
+}

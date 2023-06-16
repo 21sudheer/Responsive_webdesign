@@ -1,0 +1,76 @@
+.d-flex {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.vertical {
+    border-left: 6px solid blue;
+    height: 200px;
+    position:absolute;
+    left: 60%;
+}
+/* .fa-pause-circle-o{
+    align-items: flex-end;
+} */
+.ig{
+    margin-top: auto;
+    justify-content: center;
+    display: flex;
+    gap: 25px;
+    border-radius: 5px;
+}
+
+.c-cnt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .card.hover{
+    background-color: aliceblue;
+
+} */
+.card-m {
+    transition: transform 0.3s;
+  }
+  
+  .card-m:hover {
+    justify-self: end;
+    text-align: center;
+    border-radius: 0.75rem;
+    background-color:rgba(232,236,239,.75);
+    transform: scale(1.05);
+  }
+
+.cnrt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke; 
+    margin-bottom: 1rem;
+    
+}  
+.ct{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke; 
+    margin-bottom: 1rem;  
+}
+.tr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke; 
+    margin-bottom: 1rem;
+}
+.rt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke; 
+    margin-bottom: 1rem; 
+} 
+.fa-search-plus{
+    justify-content: end;
+}
+

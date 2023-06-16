@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="sidebar close" style="width: 20rem;">
+        <header>
+            <div class="image-text">
+              <span class="image">
+                <img src="../static/logo-icon.webp" height="50px;" width="50px;">
+              </span>
+              <div class="text logo-text">
+                <span class="name"></span>
+                <!-- <span class="profession">Web developer</span> -->
+              </div>
+              <div class="toggle"></div> <!-- Replace the <i> tag with a <div> element -->
+            </div>
+          </header>
+      
+        <div class="menu-bar">
+          <div class="menu col-sm-4">
+            <ul class="menu-links">
+              <!-- Nav links here -->
+              <li class="nav-link">
+                <a class="nav-link active" id="account-tab" data-toggle="pill" href="/"
+                    role="tab" aria-controls="account" aria-selected="true">
+                    <img src="../static/images/chats-image.png">
+                    <span class="text nav-text">chats</span>
+                </a>
+            </li>
+            
+            <li class="search-box">
+                
+                <img src="../static/images/search_icon.png"> <input type="text" ⌘ F>
+            </li>
+
+            <li class="nav-link">
+                <a href="/subscription/">
+                    
+                    <img src="../static/images/subscription-image.png">
+                    <span class="text nav-text">manage subscription</span>
+                </a>
+            </li>
+
+            <li class="nav-link">
+                <a href="/upfad/">
+                    <!-- <i class='bx bx-bell icon'></i> -->
+                    <img src="../static/images/Updates&FAQ.png">
+                    <span class="text nav-text">Updates&FAQ</span>
+                </a>
+            </li>
+
+            <li class="nav-link">
+                <a href="#">
+                    <!-- <i class='bx bx-pie-chart-alt icon'></i> -->
+                    <img src="../static/images/settings-image.png">
+                    <span class="text nav-text">settings</span>
+                </a>
+            </li><br>
+      
+              <li class="btn-group">
+                <div class="dropdown">
+                  <div class="dropdown-button">Click me</div>
+                  <div class="dropdown-content">
+                    <a href="#">Option 1</a>
+                    <a href="#">Option 2</a>
+                    <a href="#">Option 3</a>
+                  </div>
+                </div>
+              </li>
+      
+              <div class="card" style="background-color: whitesmoke; height: 100px; width: 100%; display: block; border-radius: 0.75rem;">
+                <!-- Card content here -->
+              </div>
+            </ul>
+          </div>
+      
+          <li class="mode">
+            <div class="sun-moon">
+              <i class="bx bx-moon icon moon"></i>
+              <i class="bx bx-sun icon sun"></i>
+            </div>
+            <span class="mode-text text">Dark mode</span>
+      
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </nav>
+      
+      <script>
+        // var toggleButton = document.querySelector('.toggle');
+        // var nav = document.querySelector('.sidebar');
+        // var icons = document.querySelectorAll('.icon');
+
+        // toggleButton.addEventListener('click', function() {
+        //   nav.classList.toggle('close');
+        //   for (var i = 0; i < icons.length; i++) {
+        //     icons[i].classList.toggle('visible');
+        //   }
+        // });
+        var toggleButton = document.querySelector('.toggle');
+        var nav = document.querySelector('.sidebar');
+        var icons = document.querySelectorAll('.icon');
+        var isNavOpen = false;
+
+        toggleButton.addEventListener('click', function() {
+          isNavOpen = !isNavOpen;
+          if (isNavOpen) {
+            nav.style.width = '20rem'; // Increase the width
+          } else {
+            nav.style.width = '8rem'; // Decrease the width
+          }
+          for (var i = 0; i < icons.length; i++) {
+            icons[i].classList.toggle('visible');
+          }
+        });
+
+
+      </script>
+      <style>
+        .toggle {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background-color: #ccc;
+          border-radius: 4px; /* Set the border radius to create a square shape */
+          position: relative;
+          cursor: pointer;
+        }
+
+        .toggle:before {
+          content: "";
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          border-radius: 2px; /* Set the border radius to create a smaller square shape */
+          top: 6px;
+          left: 6px;
+          background-color: #fff;
+          transition: all 0.3s ease;
+        }
+
+        .toggle-switch {
+          display: none;
+        }
+
+      </style>
+</body>
+</html>

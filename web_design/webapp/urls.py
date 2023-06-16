@@ -15,4 +15,6 @@ urlpatterns = [
     path("photo_retouching/", views.photo_retouching, name="photo_retouching"),
     path("talking_avatar/", views.talking_avatar, name="talking_avatar"),
     path("hello/", views.hello, name="hello"),
+    path("responsive/", views.responsive, name="responsive"),
+    path("page/", views.page, name="responsive"),
 ]

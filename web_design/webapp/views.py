@@ -52,3 +52,11 @@ def talking_avatar(request):
 
 def hello(request):
     return render(request, "hello.html")
+
+
+def responsive(request):
+    return render(request, "responsivepage.html")
+
+
+def page(request):
+    return render(request, "page.html")
